@@ -29,3 +29,24 @@ if (btn && mobileNav) {
     });
   });
 })();
+// Integrations search filter
+(function () {
+  const input = document.getElementById("kIntSearchInput");
+  const grid = document.getElementById("kIntGrid");
+  if (!input || !grid) return;
+
+  const items = Array.from(grid.querySelectorAll(".kIntItem"));
+
+  function norm(s) {
+    return String(s || "").toLowerCase().trim();
+  }
+
+  input.addEventListener("input", () => {
+    const q = norm(input.value);
+    items.forEach((el) => {
+      const hay = norm(el.textContent) + " " + norm(el.getAttribute("data-tags"));
+      const match = !q || hay.includes(q);
+      el.classList.toggle("isHidden", !match);
+    });
+  });
+})();
