@@ -506,3 +506,71 @@ h3{margin:0 0 6px}
   font-size: 13px !important;
   color: var(--text) !important;
 }
+/* ===== AI Setup Services Hub ===== */
+.kPkgGrid{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap:14px;
+  margin-top:18px;
+}
+
+@media(min-width: 860px){
+  .kPkgGrid{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.kPkgCard{
+  border:1px solid var(--border);
+  background: var(--card);
+  border-radius: var(--radius2);
+  padding: var(--pad);
+  box-shadow: var(--shadow);
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.kPkgCard--highlight{
+  background:#fff;
+  border-color: rgba(24,24,27,.18);
+}
+
+.kPkgTop{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:12px;
+}
+
+.kPkgActions{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:auto;
+}
+
+.kMiniGrid{
+  display:grid;
+  gap:12px;
+  margin-top:12px;
+}
+
+@media(min-width: 860px){
+  .kMiniGrid{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.kMini{
+  border:1px solid var(--border);
+  background:#fff;
+  border-radius:18px;
+  padding:14px;
+}
+
+.kMiniTitle{
+  font-weight:800;
+  letter-spacing:-.01em;
+  margin-bottom:4px;
+}
