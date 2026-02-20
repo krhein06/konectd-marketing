@@ -12,3 +12,20 @@ if (btn && mobileNav) {
     mobileNav.style.display = isOpen ? "none" : "flex";
   });
 }
+// Portal tabs
+(function () {
+  const tabs = document.querySelectorAll(".kTab");
+  const panels = document.querySelectorAll(".kPanel");
+  if (!tabs.length || !panels.length) return;
+
+  tabs.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const tab = btn.getAttribute("data-tab");
+      tabs.forEach((t) => t.classList.remove("isActive"));
+      panels.forEach((p) => p.classList.remove("isActive"));
+      btn.classList.add("isActive");
+      const panel = document.querySelector(`.kPanel[data-panel="${tab}"]`);
+      if (panel) panel.classList.add("isActive");
+    });
+  });
+})();
