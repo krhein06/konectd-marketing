@@ -133,3 +133,75 @@ h3{margin:0 0 6px}
 .footer__links{display:flex;gap:14px}
 .footer__links a{color:var(--muted);font-size:14px}
 .footer__links a:hover{color:var(--text)}
+
+/* --- Comparison section --- */
+.compareGrid{
+  display:grid;
+  gap:12px;
+  margin-top:18px;
+}
+@media(min-width: 860px){
+  .compareGrid{ grid-template-columns: 1fr 1fr; gap:14px; }
+}
+
+.compareCard{
+  border:1px solid var(--border);
+  background: var(--card);
+  border-radius: var(--radius2);
+  padding: var(--pad);
+  box-shadow: var(--shadow);
+}
+
+.compareCard__header{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  margin-bottom:12px;
+}
+.compareCard__title{
+  font-weight:800;
+  letter-spacing:-.02em;
+  font-size:18px;
+}
+.compareCard__tag{
+  font-size:12px;
+  color: var(--muted);
+}
+
+.compareCard--highlight{
+  background: white;
+  border-color: rgba(24,24,27,.18);
+}
+
+.compareList{
+  margin:0;
+  padding-left: 16px;
+  color: var(--muted);
+}
+.compareList li{
+  margin: 8px 0;
+}
+.compareList strong{
+  color: var(--text);
+  font-weight: 700;
+}
+
+.compareFooter{
+  margin-top:14px;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  align-items:flex-start;
+  justify-content:space-between;
+}
+@media(min-width: 860px){
+  .compareFooter{
+    flex-direction:row;
+    align-items:center;
+  }
+}
+.compareFooter__actions{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
