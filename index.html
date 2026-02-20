@@ -248,39 +248,232 @@
     </div>
   </div>
 </section>
-    <section class="section" id="platform">
-  <div class="container grid2">
-    <div>
-      <h2>Your centralized client portal</h2>
-      <p class="muted">
-        Every service we implement is managed from one place—your Konectd Business App. One login for your team,
-        one dashboard for operations, and clear reporting that shows what’s working.
+   <section class="section" id="platform">
+  <div class="container">
+    <h2>Your Business Command Center</h2>
+    <p class="muted maxw">
+      This isn’t another portal. It’s the place owners and managers come to see what’s happening, what needs attention,
+      and what’s working—while AI handles the busywork in the background.
+    </p>
+
+    <!-- Owner-first benefit cards -->
+    <div class="kOwnerGrid">
+      <div class="kOwnerCard">
+        <div class="kOwnerTitle">Know what’s happening</div>
+        <div class="muted">Pipeline, bookings, reviews, and revenue signals in one view.</div>
+      </div>
+      <div class="kOwnerCard">
+        <div class="kOwnerTitle">Stop missed leads</div>
+        <div class="muted">AI responds instantly and routes the right work to the right person.</div>
+      </div>
+      <div class="kOwnerCard">
+        <div class="kOwnerTitle">Hold the team accountable</div>
+        <div class="muted">Clear ownership, tasks, follow-ups, and automated reminders.</div>
+      </div>
+      <div class="kOwnerCard">
+        <div class="kOwnerTitle">Prove ROI</div>
+        <div class="muted">Automated reporting that shows what improved after go-live.</div>
+      </div>
+    </div>
+
+    <!-- Engaging "portal preview" mock -->
+    <div class="kPortal">
+      <div class="kPortalHeader">
+        <div>
+          <div class="kPortalKicker">Client Portal Preview</div>
+          <div class="kPortalHeadline">One login to manage the entire customer lifecycle</div>
+          <div class="muted">
+            Centralize conversations, customer records, bookings, reputation, automations, and performance—so the owner
+            can manage the business without chasing tools.
+          </div>
+        </div>
+
+        <!-- Eye-catching counters -->
+        <div class="kCounters">
+          <div class="kCounter">
+            <div class="kCounterValue" data-count="60">&lt; 60s</div>
+            <div class="kCounterLabel">Target first response</div>
+          </div>
+          <div class="kCounter">
+            <div class="kCounterValue" data-count="40">+20–40%</div>
+            <div class="kCounterLabel">More bookings (typical target)</div>
+          </div>
+          <div class="kCounter">
+            <div class="kCounterValue" data-count="30">+15–30%</div>
+            <div class="kCounterLabel">More reviews (typical target)</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tabbed experience (still static) -->
+      <div class="kTabs" role="tablist" aria-label="Portal tabs">
+        <button class="kTab isActive" data-tab="overview" type="button">Owner Overview</button>
+        <button class="kTab" data-tab="inbox" type="button">Inbox</button>
+        <button class="kTab" data-tab="automation" type="button">Automations</button>
+        <button class="kTab" data-tab="reporting" type="button">Reporting</button>
+      </div>
+
+      <div class="kTabPanels">
+        <div class="kPanel isActive" data-panel="overview">
+          <div class="kPanelGrid">
+            <div class="kPanelCard">
+              <div class="kPanelTitle">Today’s priorities</div>
+              <ul class="kMiniList">
+                <li><strong>3</strong> new leads need qualification</li>
+                <li><strong>5</strong> appointments confirmed</li>
+                <li><strong>2</strong> reviews need response approval</li>
+              </ul>
+            </div>
+            <div class="kPanelCard">
+              <div class="kPanelTitle">Owner KPIs</div>
+              <ul class="kMiniList">
+                <li>Speed-to-lead: <strong>&lt; 60s</strong></li>
+                <li>Booking rate: <strong>up</strong></li>
+                <li>Review volume: <strong>up</strong></li>
+              </ul>
+            </div>
+            <div class="kPanelCard">
+              <div class="kPanelTitle">Team activity</div>
+              <ul class="kMiniList">
+                <li>Open tasks: <strong>7</strong></li>
+                <li>Overdue follow-ups: <strong>1</strong></li>
+                <li>Assigned today: <strong>12</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="kPanel" data-panel="inbox">
+          <div class="kPanelGrid">
+            <div class="kPanelCard">
+              <div class="kPanelTitle">Central inbox</div>
+              <p class="muted">Messages across channels are triaged by AI, tagged by intent, and routed to the right person.</p>
+              <ul class="kMiniList">
+                <li>Auto-answers FAQs (with business rules)</li>
+                <li>Escalates edge cases to humans</li>
+                <li>Creates customer records automatically</li>
+              </ul>
+            </div>
+            <div class="kPanelCard">
+              <div class="kPanelTitle">Owner benefit</div>
+              <p class="muted">You stop losing leads because someone was busy. Response happens instantly, every time.</p>
+              <ul class="kMiniList">
+                <li>Less admin workload</li>
+                <li>More captured opportunities</li>
+                <li>Cleaner handoffs</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="kPanel" data-panel="automation">
+          <div class="kPanelGrid">
+            <div class="kPanelCard">
+              <div class="kPanelTitle">Workflow engine</div>
+              <p class="muted">Events trigger actions: follow-ups, booking reminders, review requests, routing, and more.</p>
+              <ul class="kMiniList">
+                <li>Missed-call text-back</li>
+                <li>No-response follow-up sequences</li>
+                <li>Post-service review campaigns</li>
+              </ul>
+            </div>
+            <div class="kPanelCard">
+              <div class="kPanelTitle">Owner benefit</div>
+              <p class="muted">Consistency at scale—your process runs the same way even when the team is busy.</p>
+              <ul class="kMiniList">
+                <li>Fewer dropped balls</li>
+                <li>Higher show rates</li>
+                <li>Repeatable outcomes</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="kPanel" data-panel="reporting">
+          <div class="kPanelGrid">
+            <div class="kPanelCard">
+              <div class="kPanelTitle">Automated reporting</div>
+              <p class="muted">Know what improved after go-live—response time, bookings, reviews, and pipeline conversion.</p>
+              <ul class="kMiniList">
+                <li>Weekly/monthly snapshots</li>
+                <li>Owner-ready dashboards</li>
+                <li>Multi-location rollups</li>
+              </ul>
+            </div>
+            <div class="kPanelCard">
+              <div class="kPanelTitle">Owner benefit</div>
+              <p class="muted">You can make decisions fast, without assembling data from five tools.</p>
+              <ul class="kMiniList">
+                <li>Clear ROI</li>
+                <li>Trend visibility</li>
+                <li>Prioritized actions</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Integrations section (owner-value framing) -->
+    <section class="section" style="padding-bottom:0;">
+      <h2 id="integrations">Integrations that power AI workflows</h2>
+      <p class="muted maxw">
+        Your portal connects to the tools you already run—so AI can reduce manual work instead of creating more tabs.
+        The examples below reflect common integrations like Google Business Profile, GA4, Search Console, QuickBooks, Shopify, Zapier,
+        and industry systems such as ServiceTitan, Jobber, Housecall Pro, Mindbody, Dentrix, and more.
       </p>
 
-      <div class="steps">
-        <div class="step"><span>01</span> Conversations hub (chat/SMS/email) + lead capture</div>
-        <div class="step"><span>02</span> CRM + pipeline + tasking for follow-up</div>
-        <div class="step"><span>03</span> Appointment booking + reminders</div>
-        <div class="step"><span>04</span> Reputation + listings + social management</div>
-        <div class="step"><span>05</span> Automated reporting + proof-of-performance</div>
+      <div class="kPills">
+        <span class="kPill">Google Business Profile</span>
+        <span class="kPill">Google Analytics (GA4)</span>
+        <span class="kPill">Google Search Console</span>
+        <span class="kPill">QuickBooks Online</span>
+        <span class="kPill">Shopify</span>
+        <span class="kPill">Zapier</span>
+        <span class="kPill">ServiceTitan</span>
+        <span class="kPill">Jobber</span>
+        <span class="kPill">Housecall Pro</span>
+        <span class="kPill">Mindbody</span>
+        <span class="kPill">Dentrix</span>
+        <span class="kPill">Microsoft Teams</span>
+        <span class="kPill">Zoom / Google Meet</span>
       </div>
-    </div>
 
-    <div class="card">
-      <h3>What clients can manage in one place</h3>
-      <ul class="list">
-        <li>Customer communication hub + always-on engagement</li>
-        <li>Appointment booking links and availability</li>
-        <li>CRM integrated with campaigns and automations</li>
-        <li>Integrations with 3rd-party apps (industry + accounting tools)</li>
-        <li>Marketplace-style access to additional solutions</li>
-        <li>Invite the team (unlimited users) and collaborate</li>
-        <li>Multi-location rollups and comparative reporting</li>
-      </ul>
-      <div style="margin-top:12px;">
-        <a class="btn btn--secondary" href="#contact">See the portal in a demo</a>
+      <div class="kFlowGrid">
+        <div class="card">
+          <h3>Example workflow: Home Services</h3>
+          <p class="muted">ServiceTitan / Jobber / Housecall Pro → AI Receptionist → Booking → Follow-up → Review request</p>
+          <ul class="list">
+            <li>AI qualifies job type + urgency</li>
+            <li>Creates/updates customer record</li>
+            <li>Books appointment and sends reminders</li>
+            <li>Triggers review campaign after completion</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Example workflow: Ecommerce</h3>
+          <p class="muted">Shopify → AI Support → Order status / FAQs → Upsell prompts → Reporting</p>
+          <ul class="list">
+            <li>AI answers product/order questions</li>
+            <li>Escalates exceptions to a human</li>
+            <li>Captures insights from conversations</li>
+            <li>Tracks outcomes in reporting</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Example workflow: Reporting</h3>
+          <p class="muted">GA4 + Search Console + GBP → Executive reporting → Owner decisions</p>
+          <ul class="list">
+            <li>Unified performance snapshot</li>
+            <li>Lead sources and conversion signals</li>
+            <li>Reputation trends and response rate</li>
+            <li>Automated scheduled reports</li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </section>
   </div>
 </section>
     <section class="section section--tight" id="impact">
