@@ -129,192 +129,123 @@
   <div class="container">
     <h2>Industry Playbooks</h2>
     <p class="muted maxw">
-      Each industry gets a configured workflow: response + qualification + routing + scheduling + follow-up + reputation.
-      Below are common real-world scenarios we implement.
+      One card per industry. Each card shows a real workflow we implement: response → qualify → route → schedule → follow-up → reputation.
     </p>
 
-    <div class="industryCards">
-
-      <!-- General Business -->
-      <article class="industryCard2">
-        <div class="industryCard2__top">
+    <div class="kCardsGrid">
+      <article class="kCard">
+        <div class="kCardTop">
           <h3>General Business</h3>
-          <div class="badge">Lead Response + Scheduling</div>
+          <span class="kBadge">Lead Response + Scheduling</span>
         </div>
-
-        <p class="muted">
-          Ideal for inbound inquiries, quote requests, and consultation scheduling.
-        </p>
-
-        <div class="scenarioBlock">
-          <div class="scenarioTitle">Real scenario</div>
-          <div class="scenarioText">
-            A prospect submits a “Request a Quote” form at 7:18 PM.
-          </div>
-
-          <ul class="scenarioList">
-            <li>AI responds instantly via SMS/email with 2–4 qualifying questions.</li>
-            <li>Creates the record, tags intent, and routes to the right owner.</li>
+        <p class="kCardLead">Best for inbound inquiries, quote requests, and consultation booking.</p>
+        <div class="kScenario">
+          <div class="kScenarioTitle">Real scenario</div>
+          <div class="kScenarioText">A prospect submits a “Request a Quote” form at 7:18 PM.</div>
+          <ul class="kList">
+            <li>AI responds instantly by SMS/email with qualifying questions.</li>
+            <li>Creates the record and routes to the right owner.</li>
             <li>Books a consult call and sends reminders + prep questions.</li>
-            <li>If no response, runs a follow-up sequence over 48 hours.</li>
+            <li>Runs a follow-up sequence if the lead goes quiet.</li>
           </ul>
-
-          <div class="outcomeLine">
-            <strong>Outcome:</strong> fewer missed leads, consistent follow-up, faster booking.
-          </div>
+          <div class="kOutcome"><strong>Outcome:</strong> fewer missed leads and faster bookings.</div>
         </div>
       </article>
 
-      <!-- Home Services -->
-      <article class="industryCard2">
-        <div class="industryCard2__top">
+      <article class="kCard">
+        <div class="kCardTop">
           <h3>Home Services</h3>
-          <div class="badge">After-hours Capture + Dispatch</div>
+          <span class="kBadge">After-hours Capture + Dispatch</span>
         </div>
-
-        <p class="muted">
-          HVAC, plumbing, roofing, electrical, landscaping, restoration.
-        </p>
-
-        <div class="scenarioBlock">
-          <div class="scenarioTitle">Real scenario</div>
-          <div class="scenarioText">
-            An emergency request comes in after-hours for “no heat” during winter.
-          </div>
-
-          <ul class="scenarioList">
-            <li>AI captures details (address, issue severity, photos if available).</li>
-            <li>Routes to on-call tech and confirms dispatch window.</li>
-            <li>Sends appointment confirmations + pre-visit checklist.</li>
-            <li>Triggers review request after completion and flags negatives for escalation.</li>
+        <p class="kCardLead">HVAC, plumbing, roofing, electrical, landscaping, restoration.</p>
+        <div class="kScenario">
+          <div class="kScenarioTitle">Real scenario</div>
+          <div class="kScenarioText">A “no heat” emergency comes in at 9:30 PM.</div>
+          <ul class="kList">
+            <li>AI captures job details and urgency.</li>
+            <li>Routes to on-call tech and confirms a dispatch window.</li>
+            <li>Sends confirmations + pre-visit checklist.</li>
+            <li>Triggers a review request after completion; escalates negatives.</li>
           </ul>
-
-          <div class="outcomeLine">
-            <strong>Outcome:</strong> higher close rate on urgent leads, reduced admin load.
-          </div>
+          <div class="kOutcome"><strong>Outcome:</strong> more captured revenue after hours.</div>
         </div>
       </article>
 
-      <!-- Agents & Brokers -->
-      <article class="industryCard2">
-        <div class="industryCard2__top">
+      <article class="kCard">
+        <div class="kCardTop">
           <h3>Agents & Brokers</h3>
-          <div class="badge">Qualification + Appointment Set</div>
+          <span class="kBadge">Qualification + Appointment Set</span>
         </div>
-
-        <p class="muted">
-          Real estate, insurance, lending, and broker-driven sales.
-        </p>
-
-        <div class="scenarioBlock">
-          <div class="scenarioTitle">Real scenario</div>
-          <div class="scenarioText">
-            A lead requests a quote or information on a listing from an ad.
-          </div>
-
-          <ul class="scenarioList">
-            <li>AI responds instantly and qualifies budget/timeline/needs.</li>
-            <li>Books call/showing and sends a reminder sequence.</li>
-            <li>Summarizes the conversation and preps the agent with context.</li>
-            <li>Runs nurture follow-ups automatically if not ready today.</li>
+        <p class="kCardLead">Real estate, insurance, lending, broker-driven sales.</p>
+        <div class="kScenario">
+          <div class="kScenarioTitle">Real scenario</div>
+          <div class="kScenarioText">A lead requests info from an ad or listing page.</div>
+          <ul class="kList">
+            <li>AI qualifies timeline/budget/needs instantly.</li>
+            <li>Books call/showing and sends reminder sequence.</li>
+            <li>Summarizes the conversation for the agent.</li>
+            <li>Runs nurture follow-ups if not ready today.</li>
           </ul>
-
-          <div class="outcomeLine">
-            <strong>Outcome:</strong> faster speed-to-lead, more appointments, higher show rate.
-          </div>
+          <div class="kOutcome"><strong>Outcome:</strong> faster speed-to-lead and more appointments.</div>
         </div>
       </article>
 
-      <!-- Pet Services -->
-      <article class="industryCard2">
-        <div class="industryCard2__top">
+      <article class="kCard">
+        <div class="kCardTop">
           <h3>Pet Services</h3>
-          <div class="badge">FAQs + Booking</div>
+          <span class="kBadge">FAQs + Booking</span>
         </div>
-
-        <p class="muted">
-          Grooming, boarding, training, veterinary clinics.
-        </p>
-
-        <div class="scenarioBlock">
-          <div class="scenarioTitle">Real scenario</div>
-          <div class="scenarioText">
-            A customer asks about availability, pricing, and required vaccinations.
-          </div>
-
-          <ul class="scenarioList">
+        <p class="kCardLead">Grooming, boarding, training, veterinary clinics.</p>
+        <div class="kScenario">
+          <div class="kScenarioTitle">Real scenario</div>
+          <div class="kScenarioText">A customer asks about availability and vaccination requirements.</div>
+          <ul class="kList">
             <li>AI answers FAQs and collects pet + service details.</li>
             <li>Books dates/appointments and sends prep instructions.</li>
-            <li>Automates reminders, drop-off notes, and post-visit follow-up.</li>
-            <li>Requests reviews and monitors sentiment for proactive recovery.</li>
+            <li>Automates reminders + post-visit follow-up.</li>
+            <li>Requests reviews and monitors sentiment.</li>
           </ul>
-
-          <div class="outcomeLine">
-            <strong>Outcome:</strong> fewer interruptions for staff, more confirmed bookings.
-          </div>
+          <div class="kOutcome"><strong>Outcome:</strong> reduced front-desk workload and more bookings.</div>
         </div>
       </article>
 
-      <!-- Personal Services -->
-      <article class="industryCard2">
-        <div class="industryCard2__top">
+      <article class="kCard">
+        <div class="kCardTop">
           <h3>Personal Services</h3>
-          <div class="badge">Campaigns + Retention</div>
+          <span class="kBadge">Campaigns + Retention</span>
         </div>
-
-        <p class="muted">
-          Salons, med spas, fitness, wellness, professional services.
-        </p>
-
-        <div class="scenarioBlock">
-          <div class="scenarioTitle">Real scenario</div>
-          <div class="scenarioText">
-            A business runs a monthly promo and needs bookings fast.
-          </div>
-
-          <ul class="scenarioList">
-            <li>AI follows up with leads and answers service questions instantly.</li>
-            <li>Books consultations and sends reminder sequences.</li>
-            <li>Automates reactivation messages for past customers.</li>
-            <li>Captures feedback + reviews after appointments.</li>
+        <p class="kCardLead">Salons, med spas, fitness, wellness, professional services.</p>
+        <div class="kScenario">
+          <div class="kScenarioTitle">Real scenario</div>
+          <div class="kScenarioText">A monthly promo needs bookings quickly.</div>
+          <ul class="kList">
+            <li>AI follows up with leads and answers service questions.</li>
+            <li>Books consultations and sends reminders.</li>
+            <li>Reactivates past customers automatically.</li>
+            <li>Captures reviews after appointments.</li>
           </ul>
-
-          <div class="outcomeLine">
-            <strong>Outcome:</strong> more promo conversions, stronger retention.
-          </div>
+          <div class="kOutcome"><strong>Outcome:</strong> higher promo conversion and retention.</div>
         </div>
       </article>
 
-      <!-- Automotive Services -->
-      <article class="industryCard2">
-        <div class="industryCard2__top">
+      <article class="kCard">
+        <div class="kCardTop">
           <h3>Automotive Services</h3>
-          <div class="badge">Appointment Set + Follow-up</div>
+          <span class="kBadge">Appointments + Follow-up</span>
         </div>
-
-        <p class="muted">
-          Dealerships, repair shops, detailers, tire & service centers.
-        </p>
-
-        <div class="scenarioBlock">
-          <div class="scenarioTitle">Real scenario</div>
-          <div class="scenarioText">
-            A customer requests a service appointment or asks about a vehicle listing.
-          </div>
-
-          <ul class="scenarioList">
+        <p class="kCardLead">Dealerships, repair shops, detailers, tire & service centers.</p>
+        <div class="kScenario">
+          <div class="kScenarioTitle">Real scenario</div>
+          <div class="kScenarioText">A customer requests service or asks about a listing.</div>
+          <ul class="kList">
             <li>AI responds instantly with details and availability.</li>
-            <li>Books a test drive/service slot and sends confirmations.</li>
+            <li>Books test drive/service slot and sends confirmations.</li>
             <li>Runs follow-ups if the customer goes quiet.</li>
-            <li>Requests reviews post-service and routes issues to a manager.</li>
+            <li>Requests reviews post-service and escalates issues.</li>
           </ul>
-
-          <div class="outcomeLine">
-            <strong>Outcome:</strong> higher show rate, faster response, stronger reputation.
-          </div>
+          <div class="kOutcome"><strong>Outcome:</strong> higher show rate and stronger reputation.</div>
         </div>
       </article>
-
     </div>
   </div>
 </section>
