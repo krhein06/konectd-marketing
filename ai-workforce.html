@@ -403,66 +403,257 @@
       </div>
     </div>
 
-    <!-- Integrations section (owner-value framing) -->
-    <section class="section" style="padding-bottom:0;">
-      <h2 id="integrations">Integrations that power AI workflows</h2>
-      <p class="muted maxw">
-        Your portal connects to the tools you already run—so AI can reduce manual work instead of creating more tabs.
-        The examples below reflect common integrations like Google Business Profile, GA4, Search Console, QuickBooks, Shopify, Zapier,
-        and industry systems such as ServiceTitan, Jobber, Housecall Pro, Mindbody, Dentrix, and more.
-      </p>
+  <section class="section" id="integrations">
+  <div class="container">
+    <h2>Works with the systems you already run</h2>
+    <p class="muted maxw">
+      If your business already uses tools like Jobber, ServiceTitan, Housecall Pro, QuickBooks, Dentrix, Mindbody, Shopify, and more—
+      we can connect them to the Konectd platform and AI so your customers can schedule, request quotes, and get answers instantly.
+    </p>
 
-      <div class="kPills">
-        <span class="kPill">Google Business Profile</span>
-        <span class="kPill">Google Analytics (GA4)</span>
-        <span class="kPill">Google Search Console</span>
-        <span class="kPill">QuickBooks Online</span>
-        <span class="kPill">Shopify</span>
-        <span class="kPill">Zapier</span>
-        <span class="kPill">ServiceTitan</span>
-        <span class="kPill">Jobber</span>
-        <span class="kPill">Housecall Pro</span>
-        <span class="kPill">Mindbody</span>
-        <span class="kPill">Dentrix</span>
-        <span class="kPill">Microsoft Teams</span>
-        <span class="kPill">Zoom / Google Meet</span>
-      </div>
-
-      <div class="kFlowGrid">
-        <div class="card">
-          <h3>Example workflow: Home Services</h3>
-          <p class="muted">ServiceTitan / Jobber / Housecall Pro → AI Receptionist → Booking → Follow-up → Review request</p>
-          <ul class="list">
-            <li>AI qualifies job type + urgency</li>
-            <li>Creates/updates customer record</li>
-            <li>Books appointment and sends reminders</li>
-            <li>Triggers review campaign after completion</li>
-          </ul>
+    <div class="kIntHero">
+      <div class="kIntHero__left">
+        <div class="kIntPillRow">
+          <span class="kIntPill">AI answers + qualifies</span>
+          <span class="kIntPill">AI schedules</span>
+          <span class="kIntPill">AI generates quote drafts</span>
+          <span class="kIntPill">AI creates jobs/leads</span>
+          <span class="kIntPill">All centralized in one portal</span>
         </div>
 
-        <div class="card">
-          <h3>Example workflow: Ecommerce</h3>
-          <p class="muted">Shopify → AI Support → Order status / FAQs → Upsell prompts → Reporting</p>
-          <ul class="list">
-            <li>AI answers product/order questions</li>
-            <li>Escalates exceptions to a human</li>
-            <li>Captures insights from conversations</li>
-            <li>Tracks outcomes in reporting</li>
-          </ul>
-        </div>
+        <div class="kIntActions">
+          <div class="kIntActionCard">
+            <div class="kIntActionTitle">When someone calls or chats…</div>
+            <ul class="kIntMiniList">
+              <li><strong>Schedule</strong> an appointment</li>
+              <li><strong>Create</strong> a lead/customer record</li>
+              <li><strong>Route</strong> to the right team member</li>
+              <li><strong>Send</strong> confirmations + reminders</li>
+              <li><strong>Trigger</strong> follow-up + review request</li>
+            </ul>
+          </div>
 
-        <div class="card">
-          <h3>Example workflow: Reporting</h3>
-          <p class="muted">GA4 + Search Console + GBP → Executive reporting → Owner decisions</p>
-          <ul class="list">
-            <li>Unified performance snapshot</li>
-            <li>Lead sources and conversion signals</li>
-            <li>Reputation trends and response rate</li>
-            <li>Automated scheduled reports</li>
-          </ul>
+          <div class="kIntActionCard">
+            <div class="kIntActionTitle">Owner value</div>
+            <ul class="kIntMiniList">
+              <li>Fewer missed leads</li>
+              <li>Less admin work for staff</li>
+              <li>Higher booking/show rates</li>
+              <li>Cleaner operations + accountability</li>
+              <li>Measurable ROI reporting</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </section>
+
+      <div class="kIntHero__right">
+        <div class="kIntSearch">
+          <label class="kIntLabel" for="kIntSearchInput">Find your software</label>
+          <input id="kIntSearchInput" class="kIntInput" type="text" placeholder="Search: Jobber, ServiceTitan, QuickBooks, Dentrix…" />
+          <div class="kIntHint muted">Tip: owners often search for the tool they already pay for.</div>
+        </div>
+
+        <div class="kIntLegend">
+          <span class="kIntLegendItem"><span class="kDot kDot--ops"></span> Ops & Field</span>
+          <span class="kIntLegendItem"><span class="kDot kDot--biz"></span> Business & Finance</span>
+          <span class="kIntLegendItem"><span class="kDot kDot--mar"></span> Marketing & Web</span>
+          <span class="kIntLegendItem"><span class="kDot kDot--com"></span> Comms</span>
+          <span class="kIntLegendItem"><span class="kDot kDot--ind"></span> Industry</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="kIntGrid" id="kIntGrid">
+      <!-- Ops & Field -->
+      <div class="kIntItem" data-tags="ops field home services ServiceTitan">
+        <div class="kIntItemTop"><span class="kDot kDot--ops"></span><strong>ServiceTitan</strong></div>
+        <div class="muted">Connect ServiceTitan with the platform</div>
+      </div>
+      <div class="kIntItem" data-tags="ops field home services Jobber">
+        <div class="kIntItemTop"><span class="kDot kDot--ops"></span><strong>Jobber</strong></div>
+        <div class="muted">Connect Jobber with the platform</div>
+      </div>
+      <div class="kIntItem" data-tags="ops field home services Housecall Pro">
+        <div class="kIntItemTop"><span class="kDot kDot--ops"></span><strong>Housecall Pro</strong></div>
+        <div class="muted">Connect Housecall Pro with the platform</div>
+      </div>
+      <div class="kIntItem" data-tags="ops field ServiceFusion">
+        <div class="kIntItemTop"><span class="kDot kDot--ops"></span><strong>ServiceFusion</strong></div>
+        <div class="muted">Connect ServiceFusion with the platform</div>
+      </div>
+      <div class="kIntItem" data-tags="ops field ServiceMonster">
+        <div class="kIntItemTop"><span class="kDot kDot--ops"></span><strong>ServiceMonster</strong></div>
+        <div class="muted">Connect ServiceMonster with the platform</div>
+      </div>
+      <div class="kIntItem" data-tags="ops field FieldEdge">
+        <div class="kIntItemTop"><span class="kDot kDot--ops"></span><strong>FieldEdge</strong></div>
+        <div class="muted">Connect FieldEdge with the platform</div>
+      </div>
+      <div class="kIntItem" data-tags="ops field JobNimbus">
+        <div class="kIntItemTop"><span class="kDot kDot--ops"></span><strong>JobNimbus</strong></div>
+        <div class="muted">Connect JobNimbus with the platform</div>
+      </div>
+
+      <!-- Automotive -->
+      <div class="kIntItem" data-tags="industry automotive Tekmetric">
+        <div class="kIntItemTop"><span class="kDot kDot--ind"></span><strong>Tekmetric</strong></div>
+        <div class="muted">Connect Tekmetric with the platform</div>
+      </div>
+      <div class="kIntItem" data-tags="industry automotive Shopmonkey">
+        <div class="kIntItemTop"><span class="kDot kDot--ind"></span><strong>Shopmonkey</strong></div>
+        <div class="muted">Connect Shopmonkey with the platform</div>
+      </div>
+      <div class="kIntItem" data-tags="industry automotive Shop Boss">
+        <div class="kIntItemTop"><span class="kDot kDot--ind"></span><strong>Shop Boss</strong></div>
+        <div class="muted">Connect Shop Boss with the platform</div>
+      </div>
+      <div class="kIntItem" data-tags="industry automotive Shop-Ware">
+        <div class="kIntItemTop"><span class="kDot kDot--ind"></span><strong>Shop-Ware</strong></div>
+        <div class="muted">Connect Shop-Ware with the platform</div>
+      </div>
+      <div class="kIntItem" data-tags="industry automotive RO Writer">
+        <div class="kIntItemTop"><span class="kDot kDot--ind"></span><strong>RO Writer</strong></div>
+        <div class="muted">Connect RO Writer with the platform</div>
+      </div>
+      <div class="kIntItem" data-tags="industry automotive Mitchell Manager SE">
+        <div class="kIntItemTop"><span class="kDot kDot--ind"></span><strong>Mitchell Manager SE</strong></div>
+        <div class="muted">Connect Mitchell Manager SE with the platform</div>
+      </div>
+      <div class="kIntItem" data-tags="industry automotive Protractor Mitchell Enterprise">
+        <div class="kIntItemTop"><span class="kDot kDot--ind"></span><strong>Protractor/Mitchell Enterprise</strong></div>
+        <div class="muted">Connect Protractor/Mitchell Enterprise with the platform</div>
+      </div>
+      <div class="kIntItem" data-tags="industry automotive LightSpeed">
+        <div class="kIntItemTop"><span class="kDot kDot--ind"></span><strong>LightSpeed</strong></div>
+        <div class="muted">Connect LightSpeed with the platform</div>
+      </div>
+      <div class="kIntItem" data-tags="industry automotive Napa TRACS">
+        <div class="kIntItemTop"><span class="kDot kDot--ind"></span><strong>Napa TRACS</strong></div>
+        <div class="muted">Connect Napa TRACS with the platform</div>
+      </div>
+      <div class="kIntItem" data-tags="industry automotive Napa TRACS Enterprise">
+        <div class="kIntItemTop"><span class="kDot kDot--ind"></span><strong>Napa TRACS Enterprise</strong></div>
+        <div class="muted">Connect Napa TRACS Enterprise with the platform</div>
+      </div>
+      <div class="kIntItem" data-tags="industry automotive RB Control Systems">
+        <div class="kIntItemTop"><span class="kDot kDot--ind"></span><strong>RB Control Systems</strong></div>
+        <div class="muted">Connect RB Control Systems with the platform</div>
+      </div>
+
+      <!-- Pet / Wellness -->
+      <div class="kIntItem" data-tags="industry pets Gingr">
+        <div class="kIntItemTop"><span class="kDot kDot--ind"></span><strong>Gingr</strong></div>
+        <div class="muted">Connect Gingr with the platform</div>
+      </div>
+      <div class="kIntItem" data-tags="industry pets Paw Partner">
+        <div class="kIntItemTop"><span class="kDot kDot--ind"></span><strong>Paw Partner</strong></div>
+        <div class="muted">Connect Paw Partner with the platform</div>
+      </div>
+      <div class="kIntItem" data-tags="industry pets PawLoyalty">
+        <div class="kIntItemTop"><span class="kDot kDot--ind"></span><strong>PawLoyalty</strong></div>
+        <div class="muted">Connect PawLoyalty with the platform</div>
+      </div>
+      <div class="kIntItem" data-tags="industry pets Pet Resort Pro">
+        <div class="kIntItemTop"><span class="kDot kDot--ind"></span><strong>Pet Resort Pro</strong></div>
+        <div class="muted">Connect Pet Resort Pro with the platform</div>
+      </div>
+      <div class="kIntItem" data-tags="industry pets PetExec">
+        <div class="kIntItemTop"><span class="kDot kDot--ind"></span><strong>PetExec</strong></div>
+        <div class="muted">Connect PetExec with the platform</div>
+      </div>
+      <div class="kIntItem" data-tags="industry wellness Mindbody">
+        <div class="kIntItemTop"><span class="kDot kDot--ind"></span><strong>Mindbody</strong></div>
+        <div class="muted">Connect Mindbody with the platform</div>
+      </div>
+
+      <!-- Healthcare / Dental -->
+      <div class="kIntItem" data-tags="industry dental Dentrix">
+        <div class="kIntItemTop"><span class="kDot kDot--ind"></span><strong>Dentrix</strong></div>
+        <div class="muted">Connect Dentrix with the platform</div>
+      </div>
+
+      <!-- Legal -->
+      <div class="kIntItem" data-tags="industry legal Clio">
+        <div class="kIntItemTop"><span class="kDot kDot--ind"></span><strong>Clio</strong></div>
+        <div class="muted">Connect Clio with the platform</div>
+      </div>
+
+      <!-- Business & Finance -->
+      <div class="kIntItem" data-tags="business finance QuickBooks Online">
+        <div class="kIntItemTop"><span class="kDot kDot--biz"></span><strong>QuickBooks Online</strong></div>
+        <div class="muted">Sync real-time data between the platform and QuickBooks Online</div>
+      </div>
+      <div class="kIntItem" data-tags="business finance QuickBooks Desktop">
+        <div class="kIntItemTop"><span class="kDot kDot--biz"></span><strong>QuickBooks Desktop</strong></div>
+        <div class="muted">Connect QuickBooks Desktop with the platform</div>
+      </div>
+      <div class="kIntItem" data-tags="business finance QuickBooks Online Personal">
+        <div class="kIntItemTop"><span class="kDot kDot--biz"></span><strong>QuickBooks Online: Personal</strong></div>
+        <div class="muted">Display real-time data in the Executive Report</div>
+      </div>
+
+      <!-- Marketing & Web -->
+      <div class="kIntItem" data-tags="marketing web Google Business Profile GBP">
+        <div class="kIntItemTop"><span class="kDot kDot--mar"></span><strong>Google Business Profile</strong></div>
+        <div class="muted">Connect to your Business Profile on Google Search and Maps</div>
+      </div>
+      <div class="kIntItem" data-tags="marketing web Google Analytics GA4">
+        <div class="kIntItemTop"><span class="kDot kDot--mar"></span><strong>Google Analytics (GA4)</strong></div>
+        <div class="muted">Enhance tracking and reporting data in your campaigns</div>
+      </div>
+      <div class="kIntItem" data-tags="marketing web Google Search Console">
+        <div class="kIntItemTop"><span class="kDot kDot--mar"></span><strong>Google Search Console</strong></div>
+        <div class="muted">Bring data from Google Search Console into the platform</div>
+      </div>
+      <div class="kIntItem" data-tags="marketing web Facebook">
+        <div class="kIntItemTop"><span class="kDot kDot--mar"></span><strong>Facebook</strong></div>
+        <div class="muted">Publish content and see who’s engaging with your posts</div>
+      </div>
+      <div class="kIntItem" data-tags="marketing web Apple Business Connect">
+        <div class="kIntItemTop"><span class="kDot kDot--mar"></span><strong>Apple Business Connect</strong></div>
+        <div class="muted">Boost visibility and help customers find you</div>
+      </div>
+      <div class="kIntItem" data-tags="marketing web Shopify Storefront ecommerce">
+        <div class="kIntItemTop"><span class="kDot kDot--mar"></span><strong>Shopify Storefront</strong></div>
+        <div class="muted">Connect your public Shopify store to your AI employees</div>
+      </div>
+
+      <!-- Comms -->
+      <div class="kIntItem" data-tags="communications Microsoft Teams">
+        <div class="kIntItemTop"><span class="kDot kDot--com"></span><strong>Microsoft Teams</strong></div>
+        <div class="muted">Automatically add a video conferencing link to meeting invites</div>
+      </div>
+      <div class="kIntItem" data-tags="communications Google Meet">
+        <div class="kIntItemTop"><span class="kDot kDot--com"></span><strong>Google Meet</strong></div>
+        <div class="muted">Automatically add a video conferencing link to meeting invites</div>
+      </div>
+      <div class="kIntItem" data-tags="communications Zoom Meet">
+        <div class="kIntItemTop"><span class="kDot kDot--com"></span><strong>Zoom Meet</strong></div>
+        <div class="muted">Automatically add a video conferencing link to meeting invites</div>
+      </div>
+
+      <!-- Sales / Calling -->
+      <div class="kIntItem" data-tags="sales calling Kixie">
+        <div class="kIntItemTop"><span class="kDot kDot--biz"></span><strong>Kixie</strong></div>
+        <div class="muted">Connect Kixie to log calls in the CRM</div>
+      </div>
+
+      <!-- Automation -->
+      <div class="kIntItem" data-tags="automation Zapier workflows">
+        <div class="kIntItemTop"><span class="kDot kDot--biz"></span><strong>Zapier</strong></div>
+        <div class="muted">Unlock workflow automations with thousands of apps</div>
+      </div>
+    </div>
+
+    <div class="kIntFooter">
+      <div class="muted">
+        Don’t see your system? We’ll map your workflow and confirm the integration path during onboarding.
+      </div>
+      <div class="kIntFooter__actions">
+        <a class="btn btn--primary" href="#contact">Ask about your stack</a>
+        <a class="btn btn--secondary" href="./ai-setup-services.html">See setup services</a>
+      </div>
+    </div>
   </div>
 </section>
 <section class="section" id="comparison">
