@@ -125,142 +125,246 @@
       </div>
     </section>
 
-    <section class="section" id="industries">
+   <section class="section" id="industries">
   <div class="container">
-    <h2>AI Workforce in Real Businesses</h2>
+    <h2>Industry Playbooks</h2>
     <p class="muted maxw">
-      Konectd AI roles are configured around real operational workflows. Below are examples of how businesses deploy AI
-      to increase speed, consistency, and revenue.
+      Each industry gets a configured workflow: response + qualification + routing + scheduling + follow-up + reputation.
+      Below are common real-world scenarios we implement.
     </p>
 
-    <div class="industryGrid">
+    <div class="industryCards">
 
       <!-- General Business -->
-      <div class="industryCard">
-        <h3>General Business</h3>
+      <article class="industryCard2">
+        <div class="industryCard2__top">
+          <h3>General Business</h3>
+          <div class="badge">Lead Response + Scheduling</div>
+        </div>
+
         <p class="muted">
-          Small to mid-sized companies using AI to standardize response and follow-up.
+          Ideal for inbound inquiries, quote requests, and consultation scheduling.
         </p>
-        <div class="scenario">
-          <strong>Scenario:</strong> A consulting firm receives website inquiries.
-          <ul>
-            <li>AI Receptionist responds within seconds.</li>
-            <li>Qualifies lead with structured questions.</li>
-            <li>Books strategy call automatically.</li>
-            <li>Creates CRM record and assigns rep.</li>
-            <li>Follow-up reminders triggered if no show.</li>
+
+        <div class="scenarioBlock">
+          <div class="scenarioTitle">Real scenario</div>
+          <div class="scenarioText">
+            A prospect submits a “Request a Quote” form at 7:18 PM.
+          </div>
+
+          <ul class="scenarioList">
+            <li>AI responds instantly via SMS/email with 2–4 qualifying questions.</li>
+            <li>Creates the record, tags intent, and routes to the right owner.</li>
+            <li>Books a consult call and sends reminders + prep questions.</li>
+            <li>If no response, runs a follow-up sequence over 48 hours.</li>
           </ul>
-          <div class="outcome">
-            <strong>Result:</strong> Faster booking rate + reduced manual admin time.
+
+          <div class="outcomeLine">
+            <strong>Outcome:</strong> fewer missed leads, consistent follow-up, faster booking.
           </div>
         </div>
-      </div>
+      </article>
 
       <!-- Home Services -->
-      <div class="industryCard">
-        <h3>Home Services (HVAC, Plumbing, Roofing)</h3>
+      <article class="industryCard2">
+        <div class="industryCard2__top">
+          <h3>Home Services</h3>
+          <div class="badge">After-hours Capture + Dispatch</div>
+        </div>
+
         <p class="muted">
-          High-intent leads require immediate response.
+          HVAC, plumbing, roofing, electrical, landscaping, restoration.
         </p>
-        <div class="scenario">
-          <strong>Scenario:</strong> A plumbing company gets a 9:30PM emergency inquiry.
-          <ul>
-            <li>AI instantly responds via SMS.</li>
-            <li>Collects job details.</li>
-            <li>Routes to on-call technician.</li>
-            <li>Sends appointment confirmation.</li>
-            <li>Post-job review request sent automatically.</li>
+
+        <div class="scenarioBlock">
+          <div class="scenarioTitle">Real scenario</div>
+          <div class="scenarioText">
+            An emergency request comes in after-hours for “no heat” during winter.
+          </div>
+
+          <ul class="scenarioList">
+            <li>AI captures details (address, issue severity, photos if available).</li>
+            <li>Routes to on-call tech and confirms dispatch window.</li>
+            <li>Sends appointment confirmations + pre-visit checklist.</li>
+            <li>Triggers review request after completion and flags negatives for escalation.</li>
           </ul>
-          <div class="outcome">
-            <strong>Result:</strong> Captured revenue that would otherwise be lost after hours.
+
+          <div class="outcomeLine">
+            <strong>Outcome:</strong> higher close rate on urgent leads, reduced admin load.
           </div>
         </div>
-      </div>
+      </article>
 
       <!-- Agents & Brokers -->
-      <div class="industryCard">
-        <h3>Agents & Brokers (Insurance, Real Estate)</h3>
+      <article class="industryCard2">
+        <div class="industryCard2__top">
+          <h3>Agents & Brokers</h3>
+          <div class="badge">Qualification + Appointment Set</div>
+        </div>
+
         <p class="muted">
-          Speed-to-lead determines deal success.
+          Real estate, insurance, lending, and broker-driven sales.
         </p>
-        <div class="scenario">
-          <strong>Scenario:</strong> A real estate lead downloads a property guide.
-          <ul>
-            <li>AI follows up instantly.</li>
-            <li>Asks qualifying questions.</li>
-            <li>Books showing appointment.</li>
-            <li>Provides property info automatically.</li>
-            <li>Schedules reminder sequence.</li>
+
+        <div class="scenarioBlock">
+          <div class="scenarioTitle">Real scenario</div>
+          <div class="scenarioText">
+            A lead requests a quote or information on a listing from an ad.
+          </div>
+
+          <ul class="scenarioList">
+            <li>AI responds instantly and qualifies budget/timeline/needs.</li>
+            <li>Books call/showing and sends a reminder sequence.</li>
+            <li>Summarizes the conversation and preps the agent with context.</li>
+            <li>Runs nurture follow-ups automatically if not ready today.</li>
           </ul>
-          <div class="outcome">
-            <strong>Result:</strong> Increased showing attendance and reduced manual outreach.
+
+          <div class="outcomeLine">
+            <strong>Outcome:</strong> faster speed-to-lead, more appointments, higher show rate.
           </div>
         </div>
-      </div>
+      </article>
 
       <!-- Pet Services -->
-      <div class="industryCard">
-        <h3>Pet Services (Grooming, Boarding, Vet Clinics)</h3>
+      <article class="industryCard2">
+        <div class="industryCard2__top">
+          <h3>Pet Services</h3>
+          <div class="badge">FAQs + Booking</div>
+        </div>
+
         <p class="muted">
-          Appointment-driven businesses with frequent questions.
+          Grooming, boarding, training, veterinary clinics.
         </p>
-        <div class="scenario">
-          <strong>Scenario:</strong> A pet boarding facility receives booking inquiries.
-          <ul>
-            <li>AI answers FAQs about vaccinations & availability.</li>
-            <li>Collects pet details.</li>
-            <li>Books boarding dates.</li>
-            <li>Sends pre-visit checklist automatically.</li>
-            <li>Requests review post-stay.</li>
+
+        <div class="scenarioBlock">
+          <div class="scenarioTitle">Real scenario</div>
+          <div class="scenarioText">
+            A customer asks about availability, pricing, and required vaccinations.
+          </div>
+
+          <ul class="scenarioList">
+            <li>AI answers FAQs and collects pet + service details.</li>
+            <li>Books dates/appointments and sends prep instructions.</li>
+            <li>Automates reminders, drop-off notes, and post-visit follow-up.</li>
+            <li>Requests reviews and monitors sentiment for proactive recovery.</li>
           </ul>
-          <div class="outcome">
-            <strong>Result:</strong> Reduced front-desk workload + higher review volume.
+
+          <div class="outcomeLine">
+            <strong>Outcome:</strong> fewer interruptions for staff, more confirmed bookings.
           </div>
         </div>
-      </div>
+      </article>
 
       <!-- Personal Services -->
-      <div class="industryCard">
-        <h3>Personal Services (Salons, Med Spa, Fitness)</h3>
+      <article class="industryCard2">
+        <div class="industryCard2__top">
+          <h3>Personal Services</h3>
+          <div class="badge">Campaigns + Retention</div>
+        </div>
+
         <p class="muted">
-          Consistent scheduling and client engagement drives retention.
+          Salons, med spas, fitness, wellness, professional services.
         </p>
-        <div class="scenario">
-          <strong>Scenario:</strong> A med spa runs a monthly promo.
-          <ul>
-            <li>AI sends campaign messages.</li>
-            <li>Answers treatment questions.</li>
-            <li>Books consultations.</li>
-            <li>Automates reminder & follow-up.</li>
-            <li>Encourages reviews after service.</li>
-          </ul>
-          <div class="outcome">
-            <strong>Result:</strong> Higher booking rate from campaigns.
+
+        <div class="scenarioBlock">
+          <div class="scenarioTitle">Real scenario</div>
+          <div class="scenarioText">
+            A business runs a monthly promo and needs bookings fast.
           </div>
+
+          <ul class="scenarioList">
+            <li>AI follows up with leads and answers service questions instantly.</li>
+            <li>Books consultations and sends reminder sequences.</li>
+            <li>Automates reactivation messages for past customers.</li>
+            <li>Captures feedback + reviews after appointments.</li>
+          </ul>
+
+          <div class="outcomeLine">
+            <strong>Outcome:</strong> more promo conversions, stronger retention.
+          </div>
+        </div>
+      </article>
+
+      <!-- Automotive Services -->
+      <article class="industryCard2">
+        <div class="industryCard2__top">
+          <h3>Automotive Services</h3>
+          <div class="badge">Appointment Set + Follow-up</div>
+        </div>
+
+        <p class="muted">
+          Dealerships, repair shops, detailers, tire & service centers.
+        </p>
+
+        <div class="scenarioBlock">
+          <div class="scenarioTitle">Real scenario</div>
+          <div class="scenarioText">
+            A customer requests a service appointment or asks about a vehicle listing.
+          </div>
+
+          <ul class="scenarioList">
+            <li>AI responds instantly with details and availability.</li>
+            <li>Books a test drive/service slot and sends confirmations.</li>
+            <li>Runs follow-ups if the customer goes quiet.</li>
+            <li>Requests reviews post-service and routes issues to a manager.</li>
+          </ul>
+
+          <div class="outcomeLine">
+            <strong>Outcome:</strong> higher show rate, faster response, stronger reputation.
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+    <section class="section section--tight" id="impact">
+  <div class="container">
+    <div class="impactCard">
+      <div class="impactHeader">
+        <h2>What changes after AI goes live</h2>
+        <p class="muted maxw">
+          These are typical outcomes businesses target once workflows are implemented and adoption is consistent.
+          (Replace with your real metrics as you collect them.)
+        </p>
+      </div>
+
+      <div class="impactGrid">
+        <div class="impactStat">
+          <div class="impactValue">24/7</div>
+          <div class="impactLabel">Lead response coverage</div>
+          <div class="impactNote">No missed after-hours inquiries</div>
+        </div>
+
+        <div class="impactStat">
+          <div class="impactValue">&lt; 60s</div>
+          <div class="impactLabel">Median first response time</div>
+          <div class="impactNote">Speed-to-lead increases conversion</div>
+        </div>
+
+        <div class="impactStat">
+          <div class="impactValue">+20–40%</div>
+          <div class="impactLabel">More booked appointments</div>
+          <div class="impactNote">Qualification + reminders reduce drop-off</div>
+        </div>
+
+        <div class="impactStat">
+          <div class="impactValue">+15–30%</div>
+          <div class="impactLabel">Increase in review volume</div>
+          <div class="impactNote">Automated requests + follow-ups</div>
         </div>
       </div>
 
-      <!-- Automotive -->
-      <div class="industryCard">
-        <h3>Automotive Services (Dealerships, Repair Shops)</h3>
-        <p class="muted">
-          Inventory inquiries and service appointments require immediate response.
-        </p>
-        <div class="scenario">
-          <strong>Scenario:</strong> A car shopper submits an inquiry on a vehicle.
-          <ul>
-            <li>AI responds with vehicle details.</li>
-            <li>Confirms availability.</li>
-            <li>Books test drive.</li>
-            <li>Sends follow-up reminders.</li>
-            <li>Triggers review request post-purchase.</li>
-          </ul>
-          <div class="outcome">
-            <strong>Result:</strong> Higher appointment show rate + faster lead engagement.
-          </div>
+      <div class="impactFooter">
+        <div class="impactFooter__text">
+          <strong>Key difference:</strong> this isn’t “AI chat.” It’s AI integrated into routing, scheduling, follow-up,
+          reputation, and reporting—so outcomes are measurable.
+        </div>
+        <div class="impactFooter__actions">
+          <a class="btn btn--primary" href="#contact">Book a walkthrough</a>
+          <a class="btn btn--secondary" href="#roles">See AI roles</a>
         </div>
       </div>
-
     </div>
   </div>
 </section>
