@@ -574,3 +574,156 @@ h3{margin:0 0 6px}
   letter-spacing:-.01em;
   margin-bottom:4px;
 }
+/* ===== Owner-first Portal Section ===== */
+.kOwnerGrid{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap:12px;
+  margin-top:16px;
+}
+@media(min-width: 860px){
+  .kOwnerGrid{ grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+.kOwnerCard{
+  border:1px solid var(--border);
+  background: #fff;
+  border-radius:18px;
+  padding:14px;
+}
+.kOwnerTitle{
+  font-weight:800;
+  letter-spacing:-.01em;
+  margin-bottom:4px;
+}
+
+.kPortal{
+  margin-top:14px;
+  border:1px solid var(--border);
+  background: linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
+  border-radius: var(--radius2);
+  padding: var(--pad);
+  box-shadow: var(--shadow);
+  overflow:hidden;
+}
+.kPortalHeader{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+@media(min-width: 860px){
+  .kPortalHeader{
+    flex-direction:row;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:18px;
+  }
+}
+.kPortalKicker{
+  font-size:12px;
+  font-weight:800;
+  color: var(--muted);
+  text-transform:uppercase;
+  letter-spacing:-.01em;
+}
+.kPortalHeadline{
+  font-size:22px;
+  font-weight:900;
+  letter-spacing:-.03em;
+  margin-top:6px;
+}
+
+.kCounters{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap:10px;
+}
+.kCounter{
+  border:1px solid var(--border);
+  background:#fff;
+  border-radius:18px;
+  padding:12px;
+}
+.kCounterValue{
+  font-size:20px;
+  font-weight:900;
+  letter-spacing:-.02em;
+}
+.kCounterLabel{
+  margin-top:4px;
+  font-size:12px;
+  color: var(--muted);
+}
+
+.kTabs{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-top:14px;
+}
+.kTab{
+  border:1px solid var(--border);
+  background:#fff;
+  border-radius:999px;
+  padding:8px 10px;
+  font-size:13px;
+  color: var(--muted);
+  cursor:pointer;
+}
+.kTab.isActive{
+  background: var(--brand);
+  color:#fff;
+  border-color: transparent;
+}
+.kTabPanels{ margin-top:12px; }
+.kPanel{ display:none; }
+.kPanel.isActive{ display:block; }
+
+.kPanelGrid{
+  display:grid;
+  gap:12px;
+}
+@media(min-width: 860px){
+  .kPanelGrid{ grid-template-columns: repeat(3, minmax(0,1fr)); }
+}
+.kPanelCard{
+  border:1px solid var(--border);
+  background:#fff;
+  border-radius:18px;
+  padding:14px;
+}
+.kPanelTitle{
+  font-weight:800;
+  letter-spacing:-.01em;
+  margin-bottom:6px;
+}
+.kMiniList{
+  margin:0;
+  padding-left:18px;
+  color: var(--muted);
+  font-size:14px;
+}
+.kMiniList li{ margin:6px 0; }
+
+.kPills{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:12px;
+}
+.kPill{
+  display:inline-flex;
+  padding:7px 10px;
+  font-size:12px;
+  border:1px solid var(--border);
+  border-radius:999px;
+  background:#fff;
+  color: var(--muted);
+}
+.kFlowGrid{
+  display:grid;
+  gap:12px;
+  margin-top:14px;
+}
+@media(min-width: 860px){
+  .kFlowGrid{ grid-template-columns: repeat(3, minmax(0,1fr)); }
+}
