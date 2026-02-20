@@ -251,3 +251,173 @@ h3{margin:0 0 6px}
   font-size:13px;
   color:var(--text);
 }
+/* --- Industry cards (one card per industry) --- */
+.industryCards{
+  display:grid;
+  gap:14px;
+  margin-top:18px;
+}
+
+@media(min-width: 860px){
+  .industryCards{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.industryCard2{
+  border:1px solid var(--border);
+  background: var(--card);
+  border-radius: var(--radius2);
+  padding: var(--pad);
+  box-shadow: var(--shadow);
+}
+
+.industryCard2__top{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:6px;
+}
+
+.badge{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:6px 10px;
+  font-size:12px;
+  color: var(--muted);
+  border:1px solid var(--border);
+  border-radius:999px;
+  background:white;
+  white-space:nowrap;
+}
+
+.scenarioBlock{
+  margin-top:12px;
+  border:1px solid var(--border);
+  background:white;
+  border-radius:18px;
+  padding:14px;
+}
+
+.scenarioTitle{
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:-.01em;
+  color: var(--muted);
+  text-transform:uppercase;
+}
+
+.scenarioText{
+  margin-top:6px;
+  font-size:14px;
+  color: var(--text);
+  font-weight:600;
+}
+
+.scenarioList{
+  margin:10px 0 0;
+  padding-left:18px;
+  color: var(--muted);
+  font-size:14px;
+}
+.scenarioList li{ margin:7px 0; }
+
+.outcomeLine{
+  margin-top:10px;
+  font-size:13px;
+  color: var(--text);
+}
+
+/* --- Impact stats strip --- */
+.section--tight{ padding: 34px 0; }
+
+.impactCard{
+  border:1px solid var(--border);
+  background: linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
+  border-radius: var(--radius2);
+  padding: 22px;
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.impactCard::before{
+  content:"";
+  position:absolute;
+  width:280px;height:280px;
+  right:-120px;top:-140px;
+  background: rgba(24,24,27,.06);
+  filter: blur(24px);
+  border-radius:999px;
+}
+
+.impactHeader{ position: relative; }
+
+.impactGrid{
+  display:grid;
+  gap:12px;
+  margin-top:16px;
+  position: relative;
+}
+
+@media(min-width: 860px){
+  .impactGrid{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.impactStat{
+  border:1px solid var(--border);
+  background:white;
+  border-radius:18px;
+  padding:14px;
+}
+
+.impactValue{
+  font-size:28px;
+  font-weight:900;
+  letter-spacing:-.03em;
+}
+
+.impactLabel{
+  margin-top:4px;
+  font-weight:700;
+  font-size:13px;
+}
+
+.impactNote{
+  margin-top:6px;
+  color: var(--muted);
+  font-size:12px;
+}
+
+.impactFooter{
+  margin-top:14px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  align-items:flex-start;
+  justify-content:space-between;
+  position: relative;
+}
+
+@media(min-width: 860px){
+  .impactFooter{
+    flex-direction:row;
+    align-items:center;
+  }
+}
+
+.impactFooter__text{
+  color: var(--muted);
+  font-size:14px;
+  max-width: 80ch;
+}
+
+.impactFooter__actions{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
