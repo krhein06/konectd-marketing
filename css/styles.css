@@ -205,3 +205,49 @@ h3{margin:0 0 6px}
   gap:10px;
   flex-wrap:wrap;
 }
+/* --- Industry Section --- */
+
+.industryGrid{
+  display:grid;
+  gap:14px;
+  margin-top:18px;
+}
+
+@media(min-width: 860px){
+  .industryGrid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.industryCard{
+  border:1px solid var(--border);
+  background: var(--card);
+  border-radius: var(--radius2);
+  padding: var(--pad);
+  box-shadow: var(--shadow);
+}
+
+.industryCard h3{
+  margin-bottom:6px;
+}
+
+.scenario{
+  margin-top:10px;
+  font-size:14px;
+  color:var(--muted);
+}
+
+.scenario ul{
+  margin:8px 0;
+  padding-left:18px;
+}
+
+.scenario li{
+  margin:6px 0;
+}
+
+.outcome{
+  margin-top:8px;
+  font-size:13px;
+  color:var(--text);
+}
